@@ -1,13 +1,37 @@
-# java_sample
-sample java war file creation with maven on AWS servers
+## Java Login App ##
+Testing 
 
-# server requirments 
-1.Launched Ec2 instance
-2. installed jdk from yum
-3.installed maven from wget on /opt
-4.installed apache tomcat on /opt 
-5.modified manager host manager settings on apache tomcat , created users and modified context.xml files under manager and host manager 
+## Sample Java Login application uses "UserDB" database and Table schema to store the Employee Login details. ##
 
-# creating artifacts with known files 
-got some sample files which can be easy to create war
-clone this repo 
+## How to see list of Databases ##
+SHOW DATABASES;
+
+## How to create Database ##
+
+CREATE DATABASE UserDB;
+
+## How to list Tables ##
+
+USE UserDB;
+
+SHOW TABLES;
+
+## How to create Table ##
+## Below Query to create require TABLE schema to store Employee records ##
+
+CREATE TABLE Employee (
+  id int unsigned auto_increment not null,
+  first_name varchar(250),
+  last_name varchar(250),
+  email varchar(250),
+  username varchar(250),
+  password varchar(250),
+  regdate timestamp,
+  primary key (id)
+);
+
+## List Table data ##
+SELECT * FROM Employee;
+
+## Describe Table schema ##
+DESCRIBE Employee;
