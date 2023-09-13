@@ -1,4 +1,4 @@
-## Java Login App by Manoj ## 
+## Java Login App .. ## 
 
 ## Sample Java Login application uses "UserDB" database and Table schema to store the Employee Login details. ##
 
