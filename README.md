@@ -1,6 +1,11 @@
 ## Java Login App .. ## 
 
+* check basic explanation of details of file hierarchy structure [File-hierachy](https://github.com/mano444/java_sample/wiki/File-_hierachy)  in sample java project 
+
+
 ## Sample Java Login application uses "UserDB" database and Table schema to store the Employee Login details. ##
+
+
 
 ## How to see list of Databases ##
 SHOW DATABASES;
