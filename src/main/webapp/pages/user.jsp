@@ -10,6 +10,5 @@
 Welcome ${username}
   	  <h1 style="color:blue;" align="center"> iwayQ.com | Instant Information Site  </h1>
   	  <button onclick="window.location.href = 'https://manowritingsblog.wordpress.com/';"> Visit My Blog </button>
-
 </body>
 </html
