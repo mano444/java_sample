@@ -10,8 +10,8 @@ import javax.websocket.Session;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -30,7 +30,7 @@ public class login {
 
 	private String errorMessage="";
 	
-	@RequestMapping(value = "login", method = RequestMethod.POST)
+	@PostMapping("login")
 	public ModelAndView login(String userName, String password) throws ClassNotFoundException {
 
 		
@@ -68,7 +68,7 @@ public class login {
 	
 	
 	
-	@RequestMapping(value = "login", method = RequestMethod.GET)
+	@GetMapping("login")
 	public ModelAndView registerform()
 	{
 		ModelAndView mv=new ModelAndView("login");

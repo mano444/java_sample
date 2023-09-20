@@ -7,8 +7,8 @@ import java.sql.Statement;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -25,7 +25,7 @@ public class register {
 	private String DBpassword;
 	
 	
-	@RequestMapping(value = "register", method = RequestMethod.GET)
+	@GetMapping("register")
 	public ModelAndView registerform()
 	{
 		ModelAndView mv=new ModelAndView("register");
@@ -34,7 +34,7 @@ public class register {
 	}
 	
 	
-	@RequestMapping(value = "register", method = RequestMethod.POST)
+	@PostMapping("register")
 	public ModelAndView register(String firstName,String lastName,String email,String userName,String password) throws ClassNotFoundException
 	{
 		Class.forName("com.mysql.jdbc.Driver");
