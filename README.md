@@ -1,6 +1,6 @@
 # Sample Java Code Repository
 
-* This is a sample Java code repository. 
+*Manoj - reddy  This is a sample Java code repository. 
 
 * check basic explanation of details of file hierarchy structure [File-hierachy](https://github.com/mano444/java_sample/wiki/File-_hierachy)  in this sample java project 
 
